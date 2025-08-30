@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Close & Forget Tab</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 12px; min-width: 300px; color: #1b1b1b; }
+    h3 { margin: 0 0 8px; font-size: 16px; }
+    p, li { font-size: 13px; line-height: 1.35; }
+    code { background: #f2f4f7; padding: 2px 4px; border-radius: 4px; }
+    .card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px; margin: 8px 0; }
+    .btn { margin-top: 8px; padding: 6px 10px; border: 0; border-radius: 6px; background: #0060df; color: #fff; cursor: pointer; font-size: 13px; }
+    .btn:hover { background: #004fb4; }
+    img { max-width: 100%; border: 1px solid #e5e7eb; border-radius: 6px; }
+    .muted { color: #6b7280; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <h3>Close &amp; Forget Tab</h3>
+
+  <div class="card">
+    <p><strong>Default shortcut:</strong> <code>Alt + Shift + W</code></p>
+    <p class="muted">You can customize this in Firefox settings.</p>
+    <button id="openAddons" class="btn">Open Add-ons Manager</button>
+  </div>
+
+  <div class="card">
+    <p><strong>Change the shortcut in Firefox:</strong></p>
+    <ol>
+      <li>Click the button above to open <em>Add-ons Manager</em>.</li>
+      <li>In the left sidebar, click <strong>Extensions</strong>.</li>
+      <li>Click the gear icon (⚙) → <strong>Manage Extension Shortcuts</strong>.</li>
+      <li>Find <em>Close &amp; Forget Tab (Firefox)</em> and set your keys.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <p><strong>What this does:</strong></p>
+    <ul>
+      <li>Closes the current tab</li>
+      <li>Deletes that URL from history</li>
+      <li>Removes it from <em>Recently Closed</em> when possible</li>
+    </ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

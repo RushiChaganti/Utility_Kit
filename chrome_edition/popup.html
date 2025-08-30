@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Close & Forget Tab</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 12px;
+      min-width: 280px;
+      color: #222;
+    }
+    h3 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+    }
+    p {
+      margin: 6px 0;
+      font-size: 14px;
+    }
+    ol {
+      padding-left: 18px;
+      font-size: 13px;
+      margin: 6px 0;
+    }
+    button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      border: none;
+      background: #4285f4;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background: #357ae8;
+    }
+  </style>
+</head>
+<body>
+  <h3>Close & Forget Tab</h3>
+  <p><strong>Default Shortcut:</strong> <code>Alt + Shift + W</code></p>
+
+  <div id="chromeInstructions" style="display:none;">
+    <p>To change the shortcut in <strong>Chrome/Edge</strong>:</p>
+    <ol>
+      <li>Click the button below.</li>
+      <li>Scroll down to <em>Close & Forget Tab</em>.</li>
+      <li>Click in the shortcut box and press your new keys.</li>
+    </ol>
+    <button id="openChromeShortcuts">Open Shortcut Settings</button>
+  </div>
+
+  <div id="firefoxInstructions" style="display:none;">
+    <p>To change the shortcut in <strong>Firefox</strong>:</p>
+    <ol>
+      <li>Click the button below.</li>
+      <li>In the sidebar, select <em>Extensions</em>.</li>
+      <li>Click the gear ⚙ menu → <em>Manage Extension Shortcuts</em>.</li>
+      <li>Find <em>Close & Forget Tab</em> and set your keys.</li>
+    </ol>
+    <button id="openFirefoxShortcuts">Open Add-ons Manager</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
