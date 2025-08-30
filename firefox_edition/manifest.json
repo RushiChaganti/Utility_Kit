@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Close & Forget Tab (Firefox)",
+  "name": "Utility Kit",
   "version": "0.4.0",
   "description": "Close the active tab and remove it from Recently Closed and history in Firefox.",
   "permissions": [
@@ -20,8 +20,9 @@
     "default_title": "Close Tab Without Trace",
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "assets/icon-16.png",
-      "32": "assets/icon-32.png"
+      "16": "icon/icon16.svg",
+      "48": "icon/icon48.svg",
+      "128": "icon/icon128.svg"
     }
   },
   "commands": {

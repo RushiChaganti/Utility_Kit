@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Close & Forget Tab",
+  "name": "Utility kit",
   "version": "0.3.0",
   "description": "Close the active tab and remove it from Recently Closed and history.",
   "permissions": ["tabs", "history", "browsingData", "contextMenus"],
@@ -9,7 +9,12 @@
   },
   "action": {
         "default_popup": "popup.html",
-    "default_title": "Close Tab Without Trace"
+    "default_title": "Close Tab Without Trace",
+     "default_icon": {
+      "16": "icon/icon16.svg",
+      "48": "icon/icon48.svg",
+      "128": "icon/icon128.svg"
+    }
   },
   "commands": {
     "close_and_forget": {
